@@ -1,9 +1,12 @@
-library(tidyverse)
-library(finalfit)
+#' @import dplyr
+#' @import purrr
+#' @import ggplot2
+#' @import finalfit
 
-#' Creates ballantine graphs
+
+#' @title Creates ballantine graphs
 #'
-#' Based on a dataset, dependent variable, and up to 3 independent variables,
+#' @description Based on a dataset, dependent variable, and up to 3 independent variables,
 #' creates a ballantine plot displaying the amount of shared and unique
 #' variance is explained by each independent variable to the dependent variable.
 #'
@@ -107,7 +110,7 @@ one_ind <- function(ind_list, r_squares, round, leftover) {
 
   if (leftover) {
     plot <- plot +
-      geom_text(aes(label = remaining, x = x - 0.2, y = 0.1))
+      annotate("text", label = remaining, x = -0.2, y = 0.1)
   }
 
   return(plot)
@@ -154,7 +157,7 @@ two_ind <- function(ind_list, r_squares, round, leftover) {
 
   if (leftover) {
     plot <- plot +
-      geom_text(aes(label = remaining, x = 0, y = -0.25))
+      annotate("text", label = remaining, x = 0, y = -0.25)
   }
 
   if (sum(rowred < 0) > 0) {
@@ -214,7 +217,7 @@ three_ind <- function(ind_list, r_squares, round, leftover) {
 
   if (leftover) {
     plot <- plot +
-      geom_text(aes(label = remaining, x = -0.35, y = 0.35))
+      annotate("text", label = remaining, x = -0.35, y = 0.35)
   }
 
   if (sum(rowred < 0) > 0) {

@@ -25,8 +25,7 @@ TRUE.}
 Based on a dataset, dependent variable, and up to 3 independent variables,
 creates a ballantine plot displaying the amount of shared and unique
 variance is explained by each independent variable to the dependent variable.
-}
-\details{
+
 Produces a ggplot object. Best used as a visualization shorthand.
 }
 \examples{
