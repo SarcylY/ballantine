@@ -1,0 +1,12 @@
+Package: ballantine
+Title: Create Ballantine Graphs
+Version: 0.1.0
+Authors@R: 
+    person(given = "Shawn", family = "Yee", email = "s6yee@uwaterloo.ca", role = c("aut", "cre"))
+Description: Creates a ggplot "ballantine" graph, displaying the amount of
+    variance accounted for in a dependent variable by 1-3 independent variables
+    (shared and unique). Uses OLS multiple linear regression. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
