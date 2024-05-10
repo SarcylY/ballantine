@@ -19,8 +19,10 @@ The example below shows how to use the function (using the base R dataset mtcars
 ``` r
 library(ballantine)
 
-ballantine("mtcars", c("cyl", "hp", "disp"))
+ballantine(mtcars, "hp", c("cyl", "wt", "disp"))
 ```
+
+![](https://github.com/SarcylY/ballantine/blob/main/example_ballantine.png)
 
 ## References
 
