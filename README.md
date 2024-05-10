@@ -22,3 +22,6 @@ library(ballantine)
 ballantine("mtcars", c("cyl", "hp", "disp"))
 ```
 
+## References
+
+Ozdemir, B. (2015). Partitioning Variance Into Constituents in Multiple Regression Models: Commonality Analysis. In Quantitative Psychology Research (Vol. 89, pp. 395–405). Springer International Publishing. https://doi.org/10.1007/978-3-319-07503-7_25
